@@ -1,0 +1,13 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd" layout="1column">
+    <body>
+        <referenceContainer name="content">
+        <container name="customer.login.container" label="Customer Login Container" htmlTag="div" htmlClass="login-container">
+            <block class="Magento\Customer\Block\Form\Login" name="customer_form_login" template="form/loginCopy.phtml">
+                <container name="form.additional.info" as="form_additional_info"/>
+            </block>
+            <block class="Magento\Customer\Block\Form\Login\Info" name="customer.new" template="newcustomerCopy.phtml"/>
+
+        </container>
+        </referenceContainer>
+    </body>
+</page>
